@@ -1,0 +1,8 @@
+{
+  "variants": {
+      "facing=north,lit=false": { "model": "papier:block/spirale" },
+      "facing=south,lit=false": { "model": "papier:block/spirale", "y": 180 },
+      "facing=west,lit=false":  { "model": "papier:block/spirale", "y": 270 },
+      "facing=east,lit=false":  { "model": "papier:block/spirale", "y": 90 }
+  }
+}
