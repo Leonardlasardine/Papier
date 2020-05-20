@@ -1,5 +1,7 @@
 {
-    "item.papier.item":"Spirale",
+    "item.papier.spiraleitem" : "Spirale",
 
-    "block.papier.spirale":"Spirale"
+    "block.papier.spirale" : "Spirale",
+
+    "itemGroup.papier" : "Papier"
 }

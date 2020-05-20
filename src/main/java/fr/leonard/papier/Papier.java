@@ -1,5 +1,8 @@
 package fr.leonard.papier;
 
+import mcp.MethodsReturnNonnullByDefault;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -42,5 +45,20 @@ public class Papier {
     public void onServerStarting(FMLServerStartingEvent event) {
         // do something when the server starts
         LOGGER.info("HELLO from server starting");
+    }
+
+    @MethodsReturnNonnullByDefault
+    public static class PapierItemGroup extends ItemGroup {
+
+        public static final PapierItemGroup instance = new PapierItemGroup(ItemGroup.GROUPS.length, "papier");
+
+        private PapierItemGroup(int index, String label){
+            super(index, label);
+        }
+
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ItemPapier.spiraleitem);
+        }
     }
 }

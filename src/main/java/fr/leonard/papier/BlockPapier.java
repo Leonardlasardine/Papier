@@ -5,7 +5,6 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -31,6 +30,6 @@ public class BlockPapier {
 
     @SubscribeEvent
     public static void registerBlockItem(final RegistryEvent.Register<Item> e){
-        e.getRegistry().register(new BlockItem(spirale, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("spirale"));
+        e.getRegistry().register(new BlockItem(spirale, new Item.Properties().group(Papier.PapierItemGroup.instance)).setRegistryName("spirale"));
     }
 }
