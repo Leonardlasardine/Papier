@@ -24,7 +24,7 @@ public class BlockPapier {
                 hardnessAndResistance(2F, 6F).
                 sound(SoundType.STONE).
                 harvestTool(ToolType.PICKAXE).
-                harvestLevel(1)).
+                harvestLevel(0)).
                 setRegistryName("spirale"));
     }
 
