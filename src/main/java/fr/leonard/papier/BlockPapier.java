@@ -19,13 +19,13 @@ public class BlockPapier {
 
     @SubscribeEvent
     public static void registerBlock(final RegistryEvent.Register<Block> e){
-        e.getRegistry().register(new Block(Block.Properties.
-                create(Material.ROCK).
-                hardnessAndResistance(2F, 6F).
-                sound(SoundType.STONE).
-                harvestTool(ToolType.PICKAXE).
-                harvestLevel(0)).
-                setRegistryName("spirale"));
+        e.getRegistry().register(new Block(Block.Properties
+                .create(Material.ROCK)
+                .hardnessAndResistance(2F, 6F)
+                .sound(SoundType.STONE)
+                .harvestTool(ToolType.PICKAXE)
+                .harvestLevel(0))
+                .setRegistryName("spirale"));
     }
 
     @SubscribeEvent

@@ -25,7 +25,7 @@ version="${file.jarVersion}" #mandatory
 displayName="Papier" #mandatory
 
 # A URL to query for updates for this mod. See the JSON update specification <here>
-updateJSONURL="http://myurl.me/" #optional
+updateJSONURL="https://github.com/Leonardlasardine/Papier/blob/master/update.json" #optional
 
 # A URL for the "homepage" for this mod, displayed in the mod UI
 displayURL="http://example.com/" #optional
